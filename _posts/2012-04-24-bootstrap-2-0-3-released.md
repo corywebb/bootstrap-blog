@@ -4,17 +4,17 @@ title: Bootstrap 2.0.3 released
 
 ---
 
-Today we're releasing [Bootstrap 2.0.3](http://getbootstrap.com), another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the [2.0.3 milestone](https://github.com/twitter/bootstrap/issues?sort=created&direction=desc&state=closed&page=1&milestone=10) on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what's changed.
+Today we're releasing [Bootstrap 2.0.3](http://getbootstrap.com), another bugfix release that aims to squash as many regressions and documentation inaccuracies as possible. There are almost 100 closed issues in the [2.0.3 milestone](https://github.com/twbs/bootstrap/issues?sort=created&direction=desc&state=closed&page=1&milestone=10) on GitHub, but below is a comprehensive list of the most important fixes with clear explanations of what's changed.
 
 ## Makefile
 
 In the spirit of always improving the LESS functionality and build tools, we've updated our makefile to utilize [JSHint](http://jshint.com) and [Recess](http://twitter.github.com/recess), linters for javascript and CSS. To continue to run `make` via Terminal, do the following:
 
-<pre class="prettyprint linenums">
+{% highlight bash %}
 $ npm install -g recess jshint
-</pre>
+{% endhighlight %}
 
-We've also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the [updated readme](https://github.com/twitter/bootstrap/blob/master/README.md).
+We've also removed the bootstrap.zip file from the repository, so make runs much faster as it has no need to compress any files. For more info, see the [updated readme](https://github.com/twbs/bootstrap/blob/master/README.md).
 
 ## HTML and CSS
 
@@ -87,12 +87,12 @@ We've also removed the bootstrap.zip file from the repository, so make runs much
 - Fixed mention of how to add plain text to the navbar. Previously the docs stated you only needed a `p` tag, but the required HTML is any element with class `.navbar-text`.
 - Clarified the use of `.tabbable` for tabs. The wrapping class is only required for left and right tabs to clear their floats. Also added mention of `.fade` to fade in tabs.
 - Updated forms documentation:
-	- Remove unnecessary duplicate help text in first example
-	- Added mention of required `input` class, `.search-query`, for the search form variation
-	- Removed incorrect mention of form fields being `display: block;` to start as fields are `inline-block` to start.
+    - Remove unnecessary duplicate help text in first example
+    - Added mention of required `input` class, `.search-query`, for the search form variation
+    - Removed incorrect mention of form fields being `display: block;` to start as fields are `inline-block` to start.
 - Added mention of `data-target` attribute for the dropdowns javascript plugin to show how to keep custom URLs intact on links with `.dropdown-toggle` class.
 - Updated the Kippt screenshot on the homepage to reflect their recent responsive redesign and upgrade to 2.0.2.
 
 -----
 
-We're continually updating issues and tracking them for our next release in the [2.1 milestone](https://github.com/twitter/bootstrap/issues?milestone=7&state=open), which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.
+We're continually updating issues and tracking them for our next release in the [2.1 milestone](https://github.com/twbs/bootstrap/issues?milestone=7&state=open), which will focus on adding a few new features and tackle the inevitable bugs and edge cases from this release.
